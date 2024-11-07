@@ -4,6 +4,7 @@ import win32process
 import time
 import argparse
 import win32api
+from tqdm import tqdm
 
 recorded_events = []
 combined_recorded_events = []
@@ -95,9 +96,8 @@ def replay_events(target_substring):
             controller = keyboard.Controller()
             repeat_count = int(input("Enter the number of times to replay: "))
             win32gui.SetForegroundWindow(game_window_hwnd)
-            for _ in range(repeat_count):
+            for _ in tqdm(range(repeat_count)):
                 for event_type, key, end_time, duration in combined_recorded_events:
-                    print(event_type, key, end_time, duration)
                     if event_type == 'press':
                         # if len(key) > 1:
                         #     # If it's a special key combination
@@ -117,7 +117,13 @@ def replay_events(target_substring):
                         # else:
                         time.sleep(duration)
                         controller.release(keyboard.Key[key] if key in keyboard.Key._member_names_ else key)
-                time.sleep(20)
+                time.sleep(30)
+                # Check if window is still alive, if not alive
+                # Exit
+                if win32gui.GetForegroundWindow() != game_window_hwnd:
+                    print("\nWindow is not in foreground, terminated.\n")
+                    exit(0)
+
                 # with controller.pressed(keyboard.Key.shift_l):
                 #     time.sleep(1)
                 #     controller.press('m')
