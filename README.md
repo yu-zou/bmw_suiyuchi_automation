@@ -11,7 +11,7 @@
 
 1. 通过升级获得灵光点，通过灵光点进行属性增强
 
-<img src="doc/ling-guang-dian.jpg" width="500">
+<img src="doc/ling-guang-dian-resize.jpg" width="500">
 
 2. 第二章解锁戌狗后，通过玲珑内丹制作天上仙丹，从而提升属性
 
