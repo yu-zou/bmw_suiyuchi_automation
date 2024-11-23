@@ -11,7 +11,7 @@
 
 1. 通过升级获得灵光点，通过灵光点进行属性增强
 
-<img src="doc/ling-guang-dian-resize.jpg" width="500">
+<img src="doc/ling-guang-dian.jpg" width="500">
 
 2. 第二章解锁戌狗后，通过玲珑内丹制作天上仙丹，从而提升属性
 
@@ -73,8 +73,6 @@ python automation_script.py --load wukong_zuiyetalin.txt
 7. 脚本在运行过程中会询问重复几次，输入想要刷的次数后回车即可开始工作
 
 8. 运行过程中必须始终保持 chiaki-ng 串口处于焦点中，运行过程中鼠标不要点击其他窗口
-
-## 方案思路
 
 ## TODO
 
