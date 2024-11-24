@@ -11,11 +11,15 @@
 
 1. 通过升级获得灵光点，通过灵光点进行属性增强
 
+<div align="center">
 <img src="doc/ling-guang-dian.jpg" width="500">
+</div>
 
 2. 第二章解锁戌狗后，通过玲珑内丹制作天上仙丹，从而提升属性
 
+<div align="center">
 <img src="doc/ling-long-nei-dan.jpg" width="500">
+</div>
 
 无论哪一种都需要花时间刷属性。和 Steam 端不同，PS5 端由于机器的限制，并不能使用修改器进行属性的快速修改。
 
@@ -56,17 +60,48 @@ Placeholder: zuiyetalin demo
 
 5. 传送至第三章小西天罪业塔林
 
-6. 确认装备，酒，精魂，法术，左下角背包快捷键配置和下图一致。其中装备，精魂，法术，酒等可自由搭配，保证三豆蓄力可以一击必杀上方小怪即可
+6. 确认装备，酒，精魂，法术，左下角背包快捷键配置和下图一致。其中装备，精魂，法术，酒等可自由搭配，保证三豆蓄力可以一击必杀上方小怪即可，如下配置是必须项：
+
+- 头冠：**鳖宝头骨必带**，可以提高玲珑内丹掉落率
+
+<div align="center">
+<img src="doc/touguan.jpg" width="400">
+</div>
+
+- 珍玩：**金色鲤必带**，可以提高玲珑内丹掉落率
+
+<div align="center">
+<img src="doc/zhenwan.jpg" width="400">
+</div>
+
+- 按键映射：**缩地青符必须配置在十字键上键**
+
+<div align="center">
+<img src="doc/anjian.jpg" width="400">
+</div>
+
+- 其余配置可自行搭配，建议堆暴击和攻击为主，确保能够蓄力一击必杀小怪
+
+<p align="middle">
+<div align="center">
+<img src="doc/hulu.jpg" width="250">
+<img src="doc/jinghun.jpg" width="250">
+<img src="doc/wuqi.jpg" width="250">
+</div>
+</p>
 
 7. （注：**这一步非常重要**）用 PS5 手柄手动操作，按照禁字决-喝酒-蓄力重棍的流程跑至上方小怪处松手，一棍击败小怪后，打开背包立即传送回罪业塔林传送点。
 
-<img src="doc/calibrate.gif" width="500">
+<div align="center">
+<img src="doc/calibrate.gif" width="400">
+</div>
 
 8. 传送后，此时画面视角会直接朝向小怪，此时我们所有前置步骤完成
 
 9. 在 windows 命令行中运行 python 脚本，注意打开命令行请务必以管理员模式打开
 
 ```bash
+pip install -r requirements.txt
 python automation_script.py --load wukong_zuiyetalin.txt
 ```
 
